@@ -1,0 +1,51 @@
+---
+title: "00_scratch_py"
+output:
+#  html_document: default
+  pdf_document: default
+#  md_document:
+#    variant: markdown_github
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = normalizePath("/home/sarvammittal/projects/Life_Expectancy/https:/github.com/datascience-practice-projects/Visualizing-Inequalities-in-Life-Expectancy.git"))  
+#Knitr, by default, looks in the same directory as our .Rmd file to find any files we need to draw in, like data sets or script files. If we keep our data files and scripts in separate folders (and we should) we need to configure knitr.It loads the knitr package and sets root.dir to our project folder. Knitr will now look for all files from this root folder rather than the folder it is stored in.
+```
+
+```{python}
+import os
+os.chdir("/home/sarvammittal/projects/Life_Expectancy/https:/github.com/datascience-practice-projects/Visualizing-Inequalities-in-Life-Expectancy.git")
+#To change the current working directory to specified path
+```
+
+# Life Expectancy
+
+#Life expectancy is a statistical measure of the average time an organism is expected to live, based on the year of its birth, its current age and other demographic factors including gender.
+
+```{python}
+#Importing the libraries
+import numpy as np 
+import pandas as pd 
+import tensorflow as tf
+import matplotlib.pyplot as plt
+import seaborn as sns
+#Ignore Warnings
+import warnings
+warnings.filterwarnings('ignore')
+sns.set_style('whitegrid')
+sns.set_context('paper')
+# Pandas options
+pd.set_option('display.max_colwidth', 1000, 'display.max_rows', None, 'display.max_columns', None)
+# Plotting options
+#%matplotlib inline
+plt.style.use('ggplot')
+sns.set(style='whitegrid')
+
+```
+
+```{python}
+def print_ln():
+    print('-' * 80, '\n')
+
+```
