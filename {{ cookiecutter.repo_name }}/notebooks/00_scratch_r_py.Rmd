@@ -20,7 +20,25 @@ library(ggplot2)
 ```
 
 
-
+```{python}
+#Importing the libraries
+import numpy as np 
+import pandas as pd 
+import tensorflow as tf
+import matplotlib.pyplot as plt
+import seaborn as sns
+#Ignore Warnings
+import warnings
+warnings.filterwarnings('ignore')
+sns.set_style('whitegrid')
+sns.set_context('paper')
+# Pandas options
+pd.set_option('display.max_colwidth', 1000, 'display.max_rows', None, 'display.max_columns', None)
+# Plotting options
+#%matplotlib inline
+plt.style.use('ggplot')
+sns.set(style='whitegrid')
+```
 
 
 ## Global defaults
@@ -29,3 +47,13 @@ library(ggplot2)
 options(repr.plot.width = 6, repr.plot.height = 6)
 ```
 
+
+```{python}
+import os
+os.chdir("")
+```
+
+```{python}
+def print_ln():
+    print('-' * 80, '\n')
+```
