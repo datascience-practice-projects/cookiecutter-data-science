@@ -1,0 +1,38 @@
+---
+title: "00_scratch_r"
+output:
+#  html_document: default
+  pdf_document: default
+#  md_document:
+#    variant: markdown_github
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, echo=FALSE}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+```
+
+## Global defaults
+
+```{r}
+options(repr.plot.width = 6, repr.plot.height = 6)
+
+```
+
+
+## Utility functions
+
+```{r}
+# TODO refactor this 
+print_ln <- function() {
+  cat(  "--------------------------------------------------------------------------------\n"  )
+}
+```
+
